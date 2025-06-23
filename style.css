@@ -1,0 +1,132 @@
+/* ===== Reset Global ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ===== Navegación ===== */
+header {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  padding: 8px 16px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin-left: 16px;
+}
+
+nav a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+/* ===== Botón Modo Oscuro ===== */
+#darkModeButton {
+  width: 120px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== Main ===== */
+main {
+  padding: 20px;
+}
+
+/* ===== Botón Ver más ===== */
+#verMasButton {
+  width: 120px;
+  height: 50px;
+  margin-top: 30px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ===== Contenedores de imágenes ===== */
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+/* ===== Estilo de imágenes ===== */
+.pokemon-img {
+  width: 300px;
+  border-radius: 12px;
+  margin: 10px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: red;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+footer p {
+  color: white;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .pokemon-img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #darkModeButton {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+  footer {
+    position: static;
+    margin-top: 30px;
+  }
+}
